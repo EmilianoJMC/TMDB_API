@@ -17,3 +17,5 @@ ALTER TABLE filmes_populares_TMDB
 ADD COLUMN linguagem_origem VARCHAR(255),
 ADD COLUMN genero VARCHAR(255),
 ADD COLUMN votos INT;
+ALTER TABLE filmes_populares_TMDB RENAME COLUMN genero TO genero_ids;
+ALTER TABLE filmes_populares_tmdb DROP COLUMN linguagem_origem;
